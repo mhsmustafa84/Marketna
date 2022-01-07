@@ -1,0 +1,117 @@
+/* start products */
+#products {
+    flex-wrap: wrap;
+}
+
+.product {
+    margin: 30px 15px;
+    padding: 10px 20px;
+}
+
+.product .product-img {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.product .product-img img {
+    width: 80%;
+    height: auto;
+    max-width: 100%;
+}
+.sale::after {
+    content: 'Sale';
+    padding: 5px 20px;
+    margin-bottom: 70%;
+    margin-right: 100%;
+    border-radius: 5px;
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+.product .product-details {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.product .product-details .product-price {
+    padding: 10px 0;
+    font-size: 18px;
+}
+.product .product-details .product-cat {
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: rgb(189, 48, 48);
+}
+.product .product-details .product-price .discount-price {
+    font-size: 22px;
+    margin-left: 25px;
+}
+.product-rate .sold-out {
+    display: inline-block;
+    margin-left: 15%;
+    color: red;
+    font-weight: bolder;
+    border: 1px solid red;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+/* end products */
+
+
+/* start aside */
+main {
+    padding-top: 75px;
+}
+aside {
+    margin: 100px 0;
+}
+
+aside h4 {
+    margin-top: 40px;
+    font-size: 22px;
+}
+#cats {
+    font-size: 18px;
+    margin: 10px 0 30px;
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    outline: 0;
+    cursor: pointer;
+}
+
+#cats option {
+    padding: 10px;
+    font-size: 18px;
+}
+#price-filter {
+    margin-bottom: 10px;
+    width: 70%;
+}
+#max-price {
+    margin-left: 50%;
+}
+
+
+
+/* end aside */
+
+
+
+/* start pagination */
+.pagination {
+    margin: 50px 0;
+}
+
+.pagination button {
+    color: cadetblue;
+    outline: 0;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 5px 10px;
+    margin: 0 15px;
+}

@@ -1,0 +1,376 @@
+/* start global style */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.txt-center {
+    text-align: center;
+}
+.checked {
+    color: orange;
+}
+.d-none {
+    display: none;
+}
+.d-flx {
+    display: flex;
+}
+.v-hidden {
+    visibility: hidden;
+}
+.line-throw {
+    text-decoration-line: line-through;
+    text-decoration-color: black;
+    color: red;;
+    
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* ----------end global------------ */
+
+/* preload */
+#pre-load {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all ease-in-out 1.2s;
+    z-index: 999;
+}
+#pre-load img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+}
+/* ----------end preload-------------- */
+
+/* start navbar */
+
+header {
+    background: linear-gradient(to right, #acb6e5, #74ebd5);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: all ease-in-out .7s;
+}
+#t-nav {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #33383b;
+}
+#t-nav .contact-u {
+    justify-content: start;
+}
+#t-nav .contact-u i {
+    margin-right: 10px;
+    color: white
+}
+#t-nav .contact-u span {
+    margin-right: 40px;
+    color: white;
+}
+#t-nav .contact-u a {
+    color: white;
+}
+#t-nav .social-m {
+    width: 25%;
+    text-align: right;
+}
+#t-nav .social-m a {
+    margin-left: 10%;
+    color: white;
+}
+nav {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.nav-link {
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link>ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 15px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.nav-item>a {
+    display: inline-block;
+    padding-bottom: 2px;
+    position: relative;
+    color: #33383b;
+    font-weight: bold;
+}
+
+.nav-item>a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(59, 59, 59);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-item>a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.active a::after {
+    width: 100%;
+    left: 0;
+}
+
+.logo {
+    align-content: flex-start;
+    padding: 10px 10px 12px 10px;
+    font-weight: 800;
+    font-size: 1.5em;
+    align-content: center;
+}
+
+.icon {
+    font-size: 1.3em;
+}
+.icon a:last-child {
+    margin-left: 25px;
+    color: #33383b;
+}
+
+/* --------------end navbar----------------- */
+
+
+/* start footer */
+ footer {
+    background: linear-gradient(to right, #acb6e5, #74ebd5);
+}
+
+.main {
+    max-height: 550px;
+    color: #33383b;
+    font-size: 38pt;
+    text-align: center;
+    line-height: 550px;
+}
+
+.footer-distributed {
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+    width: 40%;
+}
+
+.footer-distributed h3 {
+    color: #33383b;
+    font-size: 36px;
+    margin: 0;
+}
+
+.footer-distributed h3 span {
+    color: #5383d3;
+}
+
+
+.footer-distributed .footer-links {
+    color: #33383b;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #33383b;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #33383b;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #33383b;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #303233;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #33383b;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* ----------end footer------------ */

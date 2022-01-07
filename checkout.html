@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <title>Check Out</title>
+</head>
+
+<body>
+    <!-- start preload -->
+    <div id="pre-load">
+        <img src="img/preload.gif">
+    </div>
+    <!-- end preload -->
+
+    <!-- start navbar -->
+    <header>
+        <div id="t-nav">
+            <div class="container">
+                <div class="row" style="justify-content: space-between;">
+                    <div class="contact-u d-flx">
+                        <i class="fa fa-map-marker"></i>
+                        <span>Paris, France</span>
+                        <i class="fa fa-phone"></i>
+                        <span>+1 555 123456</span>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:support@company.com">contact@marketna.com</a>
+                    </div>
+                    <div class="social-m">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h3 class="title">Marketna</h3>
+                </div>
+                <div class="nav-link">
+                    <ul>
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a href="login.html">Login</a></li>
+                        <div class="icon">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- end navbar -->
+
+
+    <main>
+        <div class="container">
+            <div class="flex-container">
+                <div class="checkout">
+                    <table id="checkout-table">
+                        <tr>
+                            <thead>
+                                <td class="t-Head">Sl No.</td>
+                                <td class="t-Head">Item Name</td>
+                                <td class="t-Head">Item Price</td>
+                                <td class="t-Head">Quantity</td>
+                                <td class="t-Head">Item Total</td>
+                            </thead>
+                        </tr>
+                        <tbody id="checkout-table-row">
+                            <tr>
+                                <td class="t-row">1</td>
+                                <td class="t-row">iphone 12 pro</td>
+                                <td class="t-row">1190$</td>
+                                <td class="t-row">1</td>
+                                <td class="t-row">1190$</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="total-container">
+                        <span class="t-Head">
+                            Total: $1190
+                            <span id="total"></span>
+                        </span>
+                    </div>
+                    <h3> Address</h3>
+                    <textarea name="" id="" cols="30" rows="10" class="input-textarea"
+                        placeholder="Delivery Address"></textarea>
+                </div>
+            </div>
+            <div class="bottom-cta">
+                <span class="btn cta"><a href="cart.html">Back to Cart</a></span>
+                <span class="btn cta" id="confirmPurchase"><a onclick="confirmPurchase()">Confirm Purchase</a></span>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- start footer -->
+    <footer class="footer-distributed">
+        <div class="container">
+            <div class="footer-left">
+                <h3>Mar<span>ke</span>etna</h3>
+                <p class="footer-links">
+                    <a href="#">Home</a>
+                    ·
+                    <a href="#">Pricing</a>
+                    ·
+                    <a href="#">About</a>
+                    ·
+                    <a href="#">Faq</a>
+                    ·
+                    <a href="#">Contact</a>
+                </p>
+                <p class="footer-company-name">Marketna &copy; 2019</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>21 Revolution Street</span> Paris, France</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+1 555 123456</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">contact@marketna.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem aliquam libero facere
+                    aperiam, quasi adipisci ea at asperiores porro eligendi soluta quam fuga excepturi saepe iusto
+                    ratione, enim suscipit.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <script src="https://kit.fontawesome.com/9e1557e709.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="js/checkout.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            console.log(scrollY);
+            if (scrollY < 10) {
+                document.getElementById('t-nav').style.display = 'block';
+                document.querySelector('header').style.opacity = '1';
+                document.querySelector('.logo h3.title').style.color = '#33383b';
+                document.querySelector('.icon a i').style.color = '#33383b';
+                document.querySelector('header').style.background =
+                    'linear-gradient(to right, #acb6e5, #74ebd5)';
+                document.querySelectorAll('.nav-item > a ').forEach(item => item.style.color = '#33383b');
+            } else {
+                document.getElementById('t-nav').style.display = 'none';
+                document.querySelector('header').style.opacity = '.5';
+                document.querySelector('header').style.background = 'black';
+                document.querySelector('.logo h3.title').style.color = 'white';
+                document.querySelector('.icon a i').style.color = 'white';
+                document.querySelectorAll('.nav-item > a ').forEach(item => item.style.color = 'white');
+            }
+        });
+    </script>
+</body>
+
+</html>

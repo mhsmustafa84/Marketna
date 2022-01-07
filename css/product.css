@@ -1,0 +1,142 @@
+main {
+    padding-top: 130px !important;
+}
+
+.btn1 {
+    margin: 15px 0px;
+    padding: 10px 25px;
+    background: linear-gradient(68.1deg, rgba(61, 114, 180, 1) 5.8%, rgb(54, 66, 85) 98.1%);
+    border-radius: 35px;
+    border: none;
+    color: #eee;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background: linear-gradient(68.1deg, rgb(0, 226, 196) 5.8%, rgb(0, 179, 155) 98.1%);
+    transition: ease 300ms;
+}
+
+.btn:hover {
+    background: linear-gradient(68.1deg, rgb(48, 91, 143) 5.8%, rgb(38, 46, 59) 98.1%);
+    transition: ease 300ms;
+}
+
+/* header, body and footer ends */
+
+/* product-listing start */
+
+.bottom-cta {
+    margin: 25px 0px;
+    text-align: center;
+}
+.cta {
+    margin: 0px 5px;
+}
+.cta a {
+    color: white;
+}
+
+.product-item,
+.rev-product-item {
+    display: flex;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 2px #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.prod-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0px 15px;
+}
+
+.rev-prod-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.prod-image {
+    flex: 0 0 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.rev-prod-image {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.rev-prod-image>img {
+    height: 350px;
+    padding-right: 5%;
+}
+
+#rev-prod-price {
+    font-weight: 500;
+    padding-left: 2%;
+    color: rgb(194, 91, 32);
+}
+
+#rev-prod-title {
+    width: 33.33%;
+    padding-left: 2%;
+}
+
+#prod-description {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding-left: 2%;
+}
+
+.product-price {
+    padding: 20px 0;
+    font-size: 20px;
+    margin-left: 2%;
+}
+.product-price .discount-price {
+    font-size: 22px;
+    margin-left: 25px;
+}
+.sold-out {
+    display: inline-block;
+    margin-left: 15%;
+    color: red;
+    font-weight: bolder;
+    border: 1px solid red;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.product-cat {
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: rgb(189, 48, 48);
+    margin-left: 2%;
+}
+.product-description,
+.product-rate {
+    margin: 10px 0;
+    margin-left: 2%;
+}
+
+#comments,
+.sold-out {
+    margin: 35px 0;
+    margin-left: 2%;
+}
+.comment {
+    margin: 15px 0;
+    font-size: 14px;
+}
+/* product-listing end */
+
