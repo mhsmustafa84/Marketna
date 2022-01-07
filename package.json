@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce-using",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhsmustafa84/ecommerce-using-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhsmustafa84/ecommerce-using-js/issues"
+  },
+  "homepage": "https://mhsmustafa84.github.io/ecommerce-using-js"
+}
