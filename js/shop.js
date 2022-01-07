@@ -1,8 +1,8 @@
 startPreLoad();
 const productsEl = document.getElementById('products');
 const api = new XMLHttpRequest();
-// api.open('get', 'https://604a82a99251e100177ced0f.mockapi.io/jsproject/api/products');
-api.open('get', 'js/api.json');
+api.open('get', 'https://604a82a99251e100177ced0f.mockapi.io/jsproject/api/products');
+// api.open('get', 'js/api.json');
 api.send();
 api.addEventListener('readystatechange', () => {
     if (api.readyState == 4) {
@@ -133,7 +133,7 @@ const product = item => {
                     <h4 class="product-name"><a href="product.html?id=${item.id}">${item.name}</a></h4>
                     <div class="product-price">
                         <span class="real-price ${item.discount ? 'line-throw' : ''}">${item.price}$</span>
-                        <span class="discount-price">${item.discount ? item.price - 50+'$' : ''}</span>
+                        <span class="discount-price">${item.discount ? item.price - 50 + '$' : ''}</span>
                     </div>
                     <p class="product-cat">${item.category}</p>
                     <p class="product-description">${item.shortDescription}</p>
@@ -144,7 +144,7 @@ const product = item => {
                     <span class="fa fa-star ${arr[2]}"></span>
                     <span class="fa fa-star ${arr[3]}"></span>
                     <span class="fa fa-star ${arr[4]}"></span>
-                    <span ${item.soldOut ? '' : 'style="border:0"'} class="sold-out">${item.soldOut ? 'Sold Out': ''}</span>
+                    <span ${item.soldOut ? '' : 'style="border:0"'} class="sold-out">${item.soldOut ? 'Sold Out' : ''}</span>
                 </div>
             </div>
         </div>

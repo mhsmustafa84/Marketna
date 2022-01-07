@@ -3,7 +3,8 @@ startPreLoad();
 const id = location.href.split('=')[1];
 
 const api = new XMLHttpRequest();
-api.open('get', 'js/api.json');
+api.open('get', 'https://604a82a99251e100177ced0f.mockapi.io/jsproject/api/products');
+// api.open('get', 'js/api.json');
 api.send();
 api.addEventListener('readystatechange', () => {
     if (api.readyState == 4) {
@@ -12,7 +13,7 @@ api.addEventListener('readystatechange', () => {
         const arr = [];
         for (let i = 0; i < product.rating; i++) {
             arr.push('checked');
-        }        
+        }
         document.querySelector('.rev-product-item').innerHTML = `
         <div class="rev-prod-image">
             <img src="${product.img}">
@@ -23,7 +24,7 @@ api.addEventListener('readystatechange', () => {
             <div class="product-price">
                 <span style="color: darkgoldenrod;">Price: </span>
                 <span class="real-price ${product.discount ? 'line-throw' : ''}">${product.price}$</span>
-                <span class="discount-price">${product.discount ? product.price - 50+'$' : ''}</span>
+                <span class="discount-price">${product.discount ? product.price - 50 + '$' : ''}</span>
             </div>
             <p class="product-cat"><span style="color: darkgoldenrod;">Category:</span> ${product.category}</p>
             <p class="product-description"><span style="color: darkgoldenrod;">Short Description:</span> ${product.shortDescription}</p>
@@ -35,7 +36,7 @@ api.addEventListener('readystatechange', () => {
                     <span class="fa fa-star ${arr[2]}"></span>
                     <span class="fa fa-star ${arr[3]}"></span>
                     <span class="fa fa-star ${arr[4]}"></span>
-                    <span ${product.soldOut ? 'class="sold-out"' : 'style="border:0"'}>${product.soldOut ? 'Sold Out': ''}</span>
+                    <span ${product.soldOut ? 'class="sold-out"' : 'style="border:0"'}>${product.soldOut ? 'Sold Out' : ''}</span>
                 </div>
             <p id="rev-prod-title">
                 <span style="color: darkgoldenrod;">Share:</span>
@@ -61,7 +62,7 @@ api.addEventListener('readystatechange', () => {
         for (const key in product.comments) {
             const comment = document.createElement('p');
             comment.classList.add('comment');
-            comment.innerHTML =`<span class="fa fa-user" style="margin-right: 15px"></span>${product.comments[key]}`;
+            comment.innerHTML = `<span class="fa fa-user" style="margin-right: 15px"></span>${product.comments[key]}`;
             document.getElementById('comments').appendChild(comment);
         }
     }
