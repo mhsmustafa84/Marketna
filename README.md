@@ -1,1 +1,1 @@
-# ecommerce-using-js
+# Simple ecommerce using native JavaScript
